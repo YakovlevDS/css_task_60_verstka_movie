@@ -1,21 +1,25 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>movie</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="js/main.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js" defer></script>
+    <title>Movie</title>
 </head>
 
 <body>
+
     <div class="grid-init grid">
         <header class="header">
             <div class="header__wrap">
-                <a href="#" class="header__logo">MOVIE</a>
+                <a href="#" class="header__logo">MOVEA</a>
                 <nav class="header__nav">
                     <a href="#">Movies</a>
                     <a href="#">TV shows</a>
@@ -30,19 +34,78 @@
                     <div class="header__days">March 30</div>
                 </div>
                 <div class="header__personal">
-                    <img src="img/avatar.png" alt="avatar">
+                    <a href="#"><img src="img/userIcon.svg" alt="User_icon"></a>
                 </div>
             </div>
         </header>
-        <aside class="aside box-init">
-            aside
+        <aside class="box-init aside">
+            <div class="aside__wrap">
+                <div class="aside__top">
+                    <div class="aside__title">
+                        <div class="aside__header">New trailers</div>
+                        <div class="aside__sort">
+                            <div class="aside__sort-text">Sort By</div>
+                            <div class="aside__sort-select">
+                                <span>Today</span>
+                                <div class="aside__sort-img">
+                                    <img src="img/sort-item-top.svg" alt="sort_itemt">
+                                    <img src="img/sort-item-bottom.svg" alt="sort_itemb">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="aside__item">
+                        <div class="aside__views">Views 4.5k</div>
+                        <div class="aside__footer">
+                            <div class="aside__item-name">Batman 2022</div>
+                            <div class="aside__item-date">Dec 2022</div>
+                        </div>
+                        <div class="button-play__wrap">
+                            <div class="button-play"></div>
+                        </div>
+                    </div>
+                    <div class="aside__item">
+                        <div class="aside__views">Views 4.5k</div>
+                        <div class="aside__footer">
+                            <div class="aside__item-name">Batman 2022</div>
+                            <div class="aside__item-date">Dec 2022</div>
+                        </div>
+                        <div class="button-play__wrap">
+                            <div class="button-play"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="aside__bottom">
+                    <div class="aside__favourite">
+                        <div class="aside__favourite-text">Favourite genres</div>
+                        <div class="aside__genre-items">
+                            <div class="aside__genre purple">Action</div>
+                            <div class="aside__genre orange">Western</div>
+                            <div class="aside__genre purple">Adventures</div>
+                            <div class="aside__genre orange">Drama</div>
+                            <div class="aside__genre blue">Comedy</div>
+                        </div>
+                    </div>
+                    <div class="aside__footer-bottom">
+                        <div class="aside__add">
+                            <div class="aside__add-round">+</div>
+                            <span>Add your favourite genres</span>
+                        </div>
+                        <div class="aside__genre-items">
+                            <div class="aside__genre gray">Drama</div>
+                            <div class="aside__genre gray">Action</div>
+                            <div class="aside__genre gray">Comedy</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </aside>
         <main class="main">
             <section class="main-display">
                 <div class="main-display__trailer">
                     <div class="main-display__views">Views 77k</div>
                     <div class="main-display__name">
-                        <h1 class="main-display__header">Spider-Man: No Way Home</h1>
+                        <div class="main-display__header">Spider-Man: No Way Home</div>
                         <div class="main-display__date">Feb 2021</div>
                     </div>
                     <div class="button-play__wrap">
@@ -57,19 +120,18 @@
                         </div>
                         <div class="title__right">
                             <span>All movies</span>
-                            <img src="img/arrow-black-right.svg" alt="trending-right">
+                            <img src="img/next.svg" alt="skip">
                         </div>
                     </div>
                     <div class="trending">
                         <div class="trending__item">
                             <div class="trending__plash">
                                 <span>#1 Trending 🔥</span>
-                                <!-- <img src="" alt=""> -->
                             </div>
                             <div class="trending__footer">
                                 <div class="trending__footer-left">
                                     <div class="button-play__wrap small">
-                                        <div class="button-play" type="button"></div>
+                                        <div class="button-play small" type="button"></div>
                                     </div>
                                     <div class="trending__title">
                                         <h3 class="trending__header">Spider-Man: No Way Home</h3>
@@ -83,7 +145,7 @@
                             <div class="trending__footer">
                                 <div class="trending__footer-left">
                                     <div class="button-play__wrap small">
-                                        <div class="button-play" type="button"></div>
+                                        <div class="button-play small" type="button"></div>
                                     </div>
                                     <div class="trending__title">
                                         <h3 class="trending__header">Spider-Man: No Way Home</h3>
@@ -102,7 +164,7 @@
                         </div>
                         <div class="title__right">
                             <span>All movies</span>
-                            <img src="img/arrow-black-right.svg" alt="trending-right">
+                            <img src="img/next.svg" alt="skip">
                         </div>
                     </div>
                     <div class="popular">
@@ -110,7 +172,7 @@
                             <div class="popular__footer">
                                 <div class="popular__footer-left">
                                     <div class="button-play__wrap small-plus">
-                                        <div class="button-play" type="button"></div>
+                                        <div class="button-play small-plus" type="button"></div>
                                     </div>
                                     <div class="popular__title">
                                         <h3 class="popular__header">Spider-Man: No Way Home</h3>
@@ -119,7 +181,7 @@
                                 </div>
                                 <div class="popular__rating">
                                     <div class="popular__img">
-                                        <img src="img/Star.svg" alt="Stars">
+                                        <img src="img/star-rating.svg" alt="star">
                                     </div>
                                     <span>4,7</span>
                                 </div>
@@ -129,7 +191,7 @@
                             <div class="popular__footer">
                                 <div class="popular__footer-left">
                                     <div class="button-play__wrap small-plus">
-                                        <div class="button-play" type="button"></div>
+                                        <div class="button-play small-plus" type="button"></div>
                                     </div>
                                     <div class="popular__title">
                                         <h3 class="popular__header">Spider-Man: No Way Home</h3>
@@ -137,8 +199,8 @@
                                     </div>
                                 </div>
                                 <div class="popular__rating">
-                                    <div class="popular_img">
-                                        <img src="img/Star.svg" alt="star">
+                                    <div class="popular__img">
+                                        <img src="img/star-rating.svg" alt="star">
                                     </div>
                                     <span>4,7</span>
                                 </div>
@@ -148,7 +210,7 @@
                             <div class="popular__footer">
                                 <div class="popular__footer-left">
                                     <div class="button-play__wrap small-plus">
-                                        <div class="button-play" type="button"></div>
+                                        <div class="button-play small-plus" type="button"></div>
                                     </div>
                                     <div class="popular__title">
                                         <h3 class="popular__header">Spider-Man: No Way Home</h3>
@@ -156,8 +218,8 @@
                                     </div>
                                 </div>
                                 <div class="popular__rating">
-                                    <div class="popular_img">
-                                        <img src="img/Star.svg" alt="star">
+                                    <div class="popular__img">
+                                        <img src="img/star-rating.svg" alt="star">
                                     </div>
                                     <span>4,7</span>
                                 </div>
@@ -167,6 +229,12 @@
                 </div>
             </section>
         </main>
+        <div class="modal close">
+            <div class="modal__inner">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Sdp6VL_NBnY" title="Youtube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+            </div>
+        </div>
     </div>
 
 </body>
